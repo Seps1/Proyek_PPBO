@@ -63,7 +63,7 @@ public class Admin extends javax.swing.JFrame {
         jLabel3.setBounds(70, 250, 70, 20);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Proyek_Kelompok2/bg2.png"))); // NOI18N
-        jLabel1.setText("jLabel1");
+        jLabel1.setToolTipText("");
         getContentPane().add(jLabel1);
         jLabel1.setBounds(0, 0, 770, 490);
 
