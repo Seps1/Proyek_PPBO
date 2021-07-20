@@ -4,9 +4,6 @@
   <NonVisualComponents>
     <Component class="javax.swing.JLabel" name="jLabel6">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\ASUS\Pictures\test.png"/>
-        </Property>
         <Property name="text" type="java.lang.String" value="jLabel6"/>
       </Properties>
     </Component>
@@ -138,7 +135,7 @@
     <Component class="javax.swing.JLabel" name="jLabel7">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\ASUS\Pictures\proyek ppbo\bg1.png"/>
+          <Image iconType="2" name="C:\Users\ASUS\Documents\NetBeansProjects\Proyek_PPBO\src\Proyek_Kelompok2\bg1.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="jLabel7"/>
       </Properties>

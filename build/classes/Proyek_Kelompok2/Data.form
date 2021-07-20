@@ -262,7 +262,7 @@
     <Component class="javax.swing.JLabel" name="jLabel8">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\ASUS\Pictures\proyek ppbo\bg4.jpg"/>
+          <Image iconType="2" name="C:\Users\ASUS\Documents\NetBeansProjects\Proyek_PPBO\src\Proyek_Kelompok2\bg4.jpg"/>
         </Property>
       </Properties>
       <Constraints>
@@ -302,7 +302,7 @@
     <Component class="javax.swing.JLabel" name="jLabel10">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\ASUS\Pictures\proyek ppbo\bg3.jpg"/>
+          <Image iconType="2" name="C:\Users\ASUS\Documents\NetBeansProjects\Proyek_PPBO\src\Proyek_Kelompok2\bg3.jpg"/>
         </Property>
       </Properties>
       <Constraints>

@@ -54,7 +54,6 @@ public class Registrasi extends javax.swing.JFrame {
         jTextField4 = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
 
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Pictures\\test.png")); // NOI18N
         jLabel6.setText("jLabel6");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -100,7 +99,7 @@ public class Registrasi extends javax.swing.JFrame {
         getContentPane().add(jTextField4);
         jTextField4.setBounds(150, 230, 224, 22);
 
-        jLabel7.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Pictures\\proyek ppbo\\bg1.png")); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Documents\\NetBeansProjects\\Proyek_PPBO\\src\\Proyek_Kelompok2\\bg1.png")); // NOI18N
         jLabel7.setText("jLabel7");
         getContentPane().add(jLabel7);
         jLabel7.setBounds(0, 0, 890, 560);

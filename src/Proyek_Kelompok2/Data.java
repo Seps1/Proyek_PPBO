@@ -196,7 +196,7 @@ public class Data extends javax.swing.JFrame {
         getContentPane().add(jTextField5);
         jTextField5.setBounds(300, 280, 230, 22);
 
-        jLabel8.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Pictures\\proyek ppbo\\bg4.jpg")); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Documents\\NetBeansProjects\\Proyek_PPBO\\src\\Proyek_Kelompok2\\bg4.jpg")); // NOI18N
         getContentPane().add(jLabel8);
         jLabel8.setBounds(0, 330, 800, 290);
 
@@ -208,7 +208,7 @@ public class Data extends javax.swing.JFrame {
         getContentPane().add(jComboBox1);
         jComboBox1.setBounds(300, 320, 140, 22);
 
-        jLabel10.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Pictures\\proyek ppbo\\bg3.jpg")); // NOI18N
+        jLabel10.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Documents\\NetBeansProjects\\Proyek_PPBO\\src\\Proyek_Kelompok2\\bg3.jpg")); // NOI18N
         getContentPane().add(jLabel10);
         jLabel10.setBounds(0, 0, 810, 360);
 
