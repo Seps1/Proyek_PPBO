@@ -45,10 +45,10 @@ public class Admin extends javax.swing.JFrame {
         getContentPane().add(jTextField2);
         jTextField2.setBounds(70, 240, 270, 40);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Documents\\NetBeansProjects\\Proyek_PPBO\\src\\Proyek_Kelompok2\\bg2.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Proyek_Kelompok2/bg2.png"))); // NOI18N
         jLabel1.setText("jLabel1");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 770, 500);
+        jLabel1.setBounds(0, 0, 770, 480);
 
         jButton1.setText("jButton1");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
