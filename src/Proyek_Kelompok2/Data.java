@@ -97,9 +97,9 @@ public class Data extends javax.swing.JFrame {
         jTable2 = new javax.swing.JTable();
         jLabel6 = new javax.swing.JLabel();
         jTextField5 = new javax.swing.JTextField();
-        jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox<>();
+        jLabel8 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -110,29 +110,41 @@ public class Data extends javax.swing.JFrame {
         getContentPane().add(jLabel1);
         jLabel1.setBounds(230, 50, 330, 36);
 
+        jLabel2.setFont(new java.awt.Font("Leelawadee UI", 1, 14)); // NOI18N
         jLabel2.setText("NISN");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(170, 120, 110, 16);
+        jLabel2.setBounds(170, 120, 120, 20);
 
+        jLabel3.setFont(new java.awt.Font("Leelawadee UI", 1, 14)); // NOI18N
         jLabel3.setText("Nama Lengkap");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(170, 160, 130, 16);
+        jLabel3.setBounds(170, 160, 140, 20);
 
+        jLabel4.setFont(new java.awt.Font("Leelawadee UI", 1, 14)); // NOI18N
         jLabel4.setText("Email");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(170, 200, 110, 16);
+        jLabel4.setBounds(170, 200, 120, 20);
 
+        jLabel5.setFont(new java.awt.Font("Leelawadee UI", 1, 14)); // NOI18N
         jLabel5.setText("No Telepon");
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(170, 240, 110, 16);
+        jLabel5.setBounds(170, 240, 120, 20);
+
+        jTextField1.setFont(new java.awt.Font("Leelawadee UI", 1, 14)); // NOI18N
         getContentPane().add(jTextField1);
-        jTextField1.setBounds(300, 120, 230, 22);
+        jTextField1.setBounds(300, 120, 240, 30);
+
+        jTextField2.setFont(new java.awt.Font("Leelawadee UI", 1, 14)); // NOI18N
         getContentPane().add(jTextField2);
-        jTextField2.setBounds(300, 160, 230, 22);
+        jTextField2.setBounds(300, 160, 240, 30);
+
+        jTextField3.setFont(new java.awt.Font("Leelawadee UI", 1, 14)); // NOI18N
         getContentPane().add(jTextField3);
-        jTextField3.setBounds(300, 200, 230, 22);
+        jTextField3.setBounds(300, 200, 240, 30);
+
+        jTextField4.setFont(new java.awt.Font("Leelawadee UI", 1, 14)); // NOI18N
         getContentPane().add(jTextField4);
-        jTextField4.setBounds(300, 240, 230, 22);
+        jTextField4.setBounds(300, 240, 240, 30);
 
         jButton1.setBackground(new java.awt.Color(123, 185, 236));
         jButton1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
@@ -190,25 +202,30 @@ public class Data extends javax.swing.JFrame {
         getContentPane().add(jScrollPane2);
         jScrollPane2.setBounds(40, 460, 734, 90);
 
+        jLabel6.setFont(new java.awt.Font("Leelawadee UI", 1, 14)); // NOI18N
         jLabel6.setText("Nilai");
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(170, 280, 120, 16);
-        getContentPane().add(jTextField5);
-        jTextField5.setBounds(300, 280, 230, 22);
+        jLabel6.setBounds(170, 280, 130, 20);
 
-        jLabel8.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Documents\\NetBeansProjects\\Proyek_PPBO\\src\\Proyek_Kelompok2\\bg4.jpg")); // NOI18N
+        jTextField5.setFont(new java.awt.Font("Leelawadee UI", 1, 14)); // NOI18N
+        getContentPane().add(jTextField5);
+        jTextField5.setBounds(300, 280, 240, 30);
+
+        jLabel9.setFont(new java.awt.Font("Leelawadee UI", 1, 14)); // NOI18N
+        jLabel9.setText("Status");
+        getContentPane().add(jLabel9);
+        jLabel9.setBounds(170, 320, 40, 20);
+
+        jComboBox1.setFont(new java.awt.Font("Leelawadee UI", 1, 14)); // NOI18N
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Lulus", "Tidak Lulus" }));
+        getContentPane().add(jComboBox1);
+        jComboBox1.setBounds(300, 320, 150, 30);
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Proyek_Kelompok2/bg4.jpg"))); // NOI18N
         getContentPane().add(jLabel8);
         jLabel8.setBounds(0, 330, 800, 290);
 
-        jLabel9.setText("Status");
-        getContentPane().add(jLabel9);
-        jLabel9.setBounds(170, 320, 36, 16);
-
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Lulus", "Tidak Lulus" }));
-        getContentPane().add(jComboBox1);
-        jComboBox1.setBounds(300, 320, 140, 22);
-
-        jLabel10.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Documents\\NetBeansProjects\\Proyek_PPBO\\src\\Proyek_Kelompok2\\bg3.jpg")); // NOI18N
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Proyek_Kelompok2/bg3.jpg"))); // NOI18N
         getContentPane().add(jLabel10);
         jLabel10.setBounds(0, 0, 810, 360);
 

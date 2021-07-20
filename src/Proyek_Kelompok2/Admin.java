@@ -29,26 +29,43 @@ public class Admin extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPasswordField1 = new javax.swing.JPasswordField();
         jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
 
-        jTextField1.setText("Username");
+        jPasswordField1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jPasswordField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jPasswordField1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jPasswordField1);
+        jPasswordField1.setBounds(70, 270, 270, 40);
+
+        jTextField1.setFont(new java.awt.Font("Leelawadee UI", 1, 14)); // NOI18N
         getContentPane().add(jTextField1);
         jTextField1.setBounds(70, 180, 270, 40);
 
-        jTextField2.setText("Password");
-        getContentPane().add(jTextField2);
-        jTextField2.setBounds(70, 240, 270, 40);
+        jLabel2.setFont(new java.awt.Font("Leelawadee UI", 1, 14)); // NOI18N
+        jLabel2.setText("Username");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(70, 160, 80, 20);
+
+        jLabel3.setFont(new java.awt.Font("Leelawadee UI", 1, 14)); // NOI18N
+        jLabel3.setText("Password");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(70, 250, 70, 20);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Proyek_Kelompok2/bg2.png"))); // NOI18N
         jLabel1.setText("jLabel1");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 770, 480);
+        jLabel1.setBounds(0, 0, 770, 490);
 
         jButton1.setText("jButton1");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -66,9 +83,9 @@ public class Admin extends javax.swing.JFrame {
        String uname;
        String pass;
         uname = jTextField1.getText();
-        pass = jTextField2.getText();
+        pass = jPasswordField1.getText();
         Data dt = new Data();
-        if (uname == "Admin" && pass == "123456") {
+        if (uname.equals("Admin") && pass.equals("123456")) {
         dt.pack();
         dt.setLocationRelativeTo(null);
         dt.setDefaultCloseOperation(Data.EXIT_ON_CLOSE);
@@ -77,6 +94,10 @@ public class Admin extends javax.swing.JFrame {
             System.out.println("error");
         }
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jPasswordField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPasswordField1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -116,7 +137,9 @@ public class Admin extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
 }
