@@ -33,8 +33,8 @@ public class Admin extends javax.swing.JFrame {
         jTextField1 = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
@@ -62,19 +62,20 @@ public class Admin extends javax.swing.JFrame {
         getContentPane().add(jLabel3);
         jLabel3.setBounds(70, 250, 70, 20);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Proyek_Kelompok2/bg2.png"))); // NOI18N
-        jLabel1.setToolTipText("");
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 770, 490);
-
-        jButton1.setText("jButton1");
+        jButton1.setBackground(new java.awt.Color(255, 102, 102));
+        jButton1.setText("Login");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(70, 350, 270, 30);
+        jButton1.setBounds(60, 340, 280, 40);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Proyek_Kelompok2/bg2.png"))); // NOI18N
+        jLabel1.setToolTipText("");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(0, 0, 770, 490);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -89,6 +90,7 @@ public class Admin extends javax.swing.JFrame {
         dt.pack();
         dt.setLocationRelativeTo(null);
         dt.setDefaultCloseOperation(Data.EXIT_ON_CLOSE);
+        dt.setVisible(true);
         this.setVisible(false);
         } else {
             System.out.println("error");
