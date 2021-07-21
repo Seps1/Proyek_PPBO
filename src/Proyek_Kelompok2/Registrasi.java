@@ -60,6 +60,8 @@ public class Registrasi extends javax.swing.JFrame {
         jLabel6.setText("jLabel6");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(797, 501));
+        setResizable(false);
         getContentPane().setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
@@ -132,6 +134,11 @@ public class Registrasi extends javax.swing.JFrame {
         jButton2.setBackground(new java.awt.Color(102, 158, 235));
         jButton2.setFont(new java.awt.Font("Leelawadee UI", 1, 18)); // NOI18N
         jButton2.setText("Informasi Pendaftaran");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton2);
         jButton2.setBounds(490, 460, 240, 30);
 
@@ -164,6 +171,16 @@ public class Registrasi extends javax.swing.JFrame {
     private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField4ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        Informasi info = new Informasi();
+        info.pack();
+        info.setLocationRelativeTo(null);
+        info.setDefaultCloseOperation(Data.EXIT_ON_CLOSE);
+        info.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
 
     /**

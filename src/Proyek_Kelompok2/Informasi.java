@@ -20,6 +20,7 @@ public class Informasi extends javax.swing.JFrame {
      * Creates new form Informasi
      */
     public Informasi() {
+        this.setLocationRelativeTo(null);
         initComponents();
         TampilData();
     }
@@ -60,8 +61,10 @@ public class Informasi extends javax.swing.JFrame {
         jTable1 = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(638, 561));
         getContentPane().setLayout(null);
 
         jTable1.setBackground(new java.awt.Color(123, 185, 236));
@@ -93,10 +96,13 @@ public class Informasi extends javax.swing.JFrame {
         jLabel1.setText("Informasi Jalur Pendaftaran");
         getContentPane().add(jLabel1);
         jLabel1.setBounds(160, 40, 293, 26);
-
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Documents\\NetBeansProjects\\Proyek_PPBO\\src\\Proyek_Kelompok2\\bg5.jpg")); // NOI18N
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(0, -300, 640, 860);
+        jLabel2.setBounds(0, -300, 0, 860);
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Proyek_Kelompok2/bg5.jpg"))); // NOI18N
+        jLabel3.setText("jLabel3");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(0, 0, 640, 560);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -144,6 +150,7 @@ public class Informasi extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
