@@ -16,7 +16,7 @@ public class Admin extends javax.swing.JFrame {
      */
     public Admin() {
         initComponents();
-
+        this.setLocationRelativeTo(null);
     }
 
 
@@ -37,6 +37,8 @@ public class Admin extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(790, 468));
+        setResizable(false);
         getContentPane().setLayout(null);
 
         jPasswordField1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -74,8 +76,9 @@ public class Admin extends javax.swing.JFrame {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Proyek_Kelompok2/bg2.png"))); // NOI18N
         jLabel1.setToolTipText("");
+        jLabel1.setPreferredSize(new java.awt.Dimension(768, 477));
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 770, 490);
+        jLabel1.setBounds(0, 0, 800, 490);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

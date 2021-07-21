@@ -135,7 +135,7 @@ public class Registrasi extends javax.swing.JFrame {
         getContentPane().add(jButton2);
         jButton2.setBounds(490, 460, 240, 30);
 
-        jLabel8.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Documents\\NetBeansProjects\\tes1\\src\\Proyek_Kelompok2\\bg6.jpg")); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Proyek_Kelompok2/bg6.jpg"))); // NOI18N
         jLabel8.setText("jLabel8");
         getContentPane().add(jLabel8);
         jLabel8.setBounds(-40, 0, 520, 500);
