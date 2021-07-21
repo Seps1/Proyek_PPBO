@@ -61,6 +61,7 @@ public class Informasi extends javax.swing.JFrame {
         jTable1 = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -99,6 +100,17 @@ public class Informasi extends javax.swing.JFrame {
         getContentPane().add(jLabel2);
         jLabel2.setBounds(0, -300, 0, 860);
 
+        jButton1.setBackground(new java.awt.Color(102, 255, 51));
+        jButton1.setFont(new java.awt.Font("Leelawadee UI", 1, 18)); // NOI18N
+        jButton1.setText("Kembali ke Registrasi");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1);
+        jButton1.setBounds(210, 380, 220, 50);
+
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Proyek_Kelompok2/bg5.jpg"))); // NOI18N
         jLabel3.setText("jLabel3");
         getContentPane().add(jLabel3);
@@ -110,6 +122,16 @@ public class Informasi extends javax.swing.JFrame {
     private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_jTable1MouseClicked
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        Registrasi reg = new Registrasi();
+        reg.setVisible(true);
+        reg.pack();
+        reg.setLocationRelativeTo(null);
+        reg.setDefaultCloseOperation(Registrasi.EXIT_ON_CLOSE);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -148,6 +170,7 @@ public class Informasi extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

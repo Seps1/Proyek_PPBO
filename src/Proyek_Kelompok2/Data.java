@@ -25,6 +25,7 @@ public class Data extends javax.swing.JFrame {
         initComponents();
         KosongForm();
         TampilData();
+        this.setLocationRelativeTo(null);
     }
 
     public void KosongForm() {
@@ -99,8 +100,10 @@ public class Data extends javax.swing.JFrame {
         jTextField5 = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox<>();
+        jButton5 = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
+        jButton4 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(799, 607));
@@ -168,7 +171,7 @@ public class Data extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton2);
-        jButton2.setBounds(370, 390, 75, 25);
+        jButton2.setBounds(310, 390, 75, 25);
 
         jButton3.setBackground(new java.awt.Color(123, 185, 236));
         jButton3.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
@@ -179,7 +182,7 @@ public class Data extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton3);
-        jButton3.setBounds(550, 390, 73, 25);
+        jButton3.setBounds(440, 390, 73, 25);
 
         jScrollPane2.setBackground(new java.awt.Color(123, 217, 255));
 
@@ -223,13 +226,34 @@ public class Data extends javax.swing.JFrame {
         getContentPane().add(jComboBox1);
         jComboBox1.setBounds(300, 320, 150, 30);
 
+        jButton5.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jButton5.setText("Keluar");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton5);
+        jButton5.setBounds(560, 390, 80, 25);
+
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Proyek_Kelompok2/bg4.jpg"))); // NOI18N
         getContentPane().add(jLabel8);
-        jLabel8.setBounds(0, 330, 800, 290);
+        jLabel8.setBounds(0, 320, 800, 290);
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Proyek_Kelompok2/bg3.jpg"))); // NOI18N
         getContentPane().add(jLabel10);
         jLabel10.setBounds(0, 0, 810, 360);
+
+        jButton4.setBackground(new java.awt.Color(123, 185, 236));
+        jButton4.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jButton4.setText("Delete");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton4);
+        jButton4.setBounds(440, 390, 73, 25);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -311,6 +335,20 @@ public class Data extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jTable2MouseClicked
 
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+        Menu m = new Menu();
+        m.setVisible(true);
+        m.pack();
+        m.setLocationRelativeTo(null);
+        m.setDefaultCloseOperation(Menu.EXIT_ON_CLOSE);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton5ActionPerformed
+
 
     /**
      * @param args the command line arguments
@@ -352,6 +390,8 @@ public class Data extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;

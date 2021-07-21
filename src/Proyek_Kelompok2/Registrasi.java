@@ -22,6 +22,7 @@ public class Registrasi extends javax.swing.JFrame {
     public Registrasi() {
         initComponents();
         KosongForm();
+        this.setLocationRelativeTo(null);
     }
 
     public void KosongForm() {
@@ -30,6 +31,7 @@ public class Registrasi extends javax.swing.JFrame {
         jTextField2.setText(null);
         jTextField3.setText(null);
         jTextField4.setText(null);
+        jComboBox1.setSelectedItem(this);
     }
 
     /**
@@ -56,11 +58,12 @@ public class Registrasi extends javax.swing.JFrame {
         jComboBox1 = new javax.swing.JComboBox<>();
         jButton2 = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
+        jButton3 = new javax.swing.JButton();
 
         jLabel6.setText("jLabel6");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(797, 501));
+        setPreferredSize(new java.awt.Dimension(797, 530));
         setResizable(false);
         getContentPane().setLayout(null);
 
@@ -100,19 +103,29 @@ public class Registrasi extends javax.swing.JFrame {
         getContentPane().add(jButton1);
         jButton1.setBounds(490, 420, 130, 30);
 
-        jTextField1.setFont(new java.awt.Font("Leelawadee UI", 1, 18)); // NOI18N
+        jTextField1.setFont(new java.awt.Font("Leelawadee UI", 1, 14)); // NOI18N
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jTextField1);
         jTextField1.setBounds(490, 90, 260, 30);
 
-        jTextField2.setFont(new java.awt.Font("Leelawadee UI", 1, 18)); // NOI18N
+        jTextField2.setFont(new java.awt.Font("Leelawadee UI", 1, 14)); // NOI18N
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jTextField2);
         jTextField2.setBounds(490, 160, 260, 30);
 
-        jTextField3.setFont(new java.awt.Font("Leelawadee UI", 1, 18)); // NOI18N
+        jTextField3.setFont(new java.awt.Font("Leelawadee UI", 1, 14)); // NOI18N
         getContentPane().add(jTextField3);
         jTextField3.setBounds(490, 230, 260, 30);
 
-        jTextField4.setFont(new java.awt.Font("Leelawadee UI", 1, 18)); // NOI18N
+        jTextField4.setFont(new java.awt.Font("Leelawadee UI", 1, 14)); // NOI18N
         jTextField4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField4ActionPerformed(evt);
@@ -126,8 +139,13 @@ public class Registrasi extends javax.swing.JFrame {
         getContentPane().add(jLabel7);
         jLabel7.setBounds(490, 350, 170, 20);
 
-        jComboBox1.setFont(new java.awt.Font("Leelawadee UI", 0, 13)); // NOI18N
+        jComboBox1.setFont(new java.awt.Font("Leelawadee UI", 1, 14)); // NOI18N
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "PSUD", "Ujian Mandiri 1", "Ujian Mandiri 2", "Ujian Mandiri 3", "Jalur Covid 1", "Jalur Covid 2", "Jalur Covid 3" }));
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jComboBox1);
         jComboBox1.setBounds(490, 380, 280, 30);
 
@@ -147,16 +165,32 @@ public class Registrasi extends javax.swing.JFrame {
         getContentPane().add(jLabel8);
         jLabel8.setBounds(-40, 0, 520, 500);
 
+        jButton3.setBackground(new java.awt.Color(255, 51, 51));
+        jButton3.setFont(new java.awt.Font("Leelawadee UI", 1, 18)); // NOI18N
+        jButton3.setText("Keluar");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton3);
+        jButton3.setBounds(650, 420, 130, 30);
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         try {
-            String sql = "INSERT INTO mahasiswa VALUES('" + jTextField1.getText() + "',"
+            String sql = "INSERT INTO mahasiswa"
+                    + "(nisn,nama,email,no_telp,jalur,nilai,status)"
+                    + "VALUES(" + Integer.parseInt(jTextField1.getText()) + ","
                     + "'" + jTextField2.getText() + "',"
                     + "'" + jTextField3.getText() + "',"
-                    + "'" + jTextField4.getText() + "')";
+                    + "'" + jTextField4.getText() + "',"
+                    + "'"+jComboBox1.getSelectedItem()+"',"
+                    + "' ',' ')";
+           
 
             java.sql.Connection conn = (Connection) Konfig.configDB();
             java.sql.PreparedStatement pstm = conn.prepareStatement(sql);
@@ -181,6 +215,28 @@ public class Registrasi extends javax.swing.JFrame {
         info.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox1ActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+        Menu m = new Menu();
+        m.setVisible(true);
+        m.pack();
+        m.setLocationRelativeTo(null);
+        m.setDefaultCloseOperation(Menu.EXIT_ON_CLOSE);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton3ActionPerformed
 
 
     /**
@@ -221,6 +277,7 @@ public class Registrasi extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
