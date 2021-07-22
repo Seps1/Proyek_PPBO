@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7aa6e319-a294-412c-97f5-40c34e1bb6a4">
-	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.zoom" value="1.6105100000000008"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
 	<queryString>
-		<![CDATA[SELECT * FROM mahasiswa
-ORDER BY status;]]>
+		<![CDATA[SELECT
+     *
+FROM
+     `mahasiswa`
+ORDER BY STATUS]]>
 	</queryString>
 	<field name="nisn" class="java.lang.Integer">
 		<fieldDescription><![CDATA[]]></fieldDescription>
@@ -83,7 +86,7 @@ ORDER BY status;]]>
 	<detail>
 		<band height="20" splitType="Stretch">
 			<textField>
-				<reportElement uuid="299cf45d-24c6-4a58-9b9e-918a86224459" x="17" y="0" width="128" height="20"/>
+				<reportElement uuid="299cf45d-24c6-4a58-9b9e-918a86224459" x="16" y="0" width="128" height="20"/>
 				<textElement textAlignment="Center">
 					<font fontName="Times New Roman" size="12"/>
 				</textElement>

@@ -12,6 +12,9 @@ import java.sql.SQLException;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.DefaultTableColumnModel;
+import net.sf.jasperreports.engine.JasperFillManager;
+import net.sf.jasperreports.engine.JasperPrint;
+import net.sf.jasperreports.view.JasperViewer;
 /**
  *
  * @author ASUS
@@ -98,6 +101,7 @@ public class Data extends javax.swing.JFrame {
         jTable2 = new javax.swing.JTable();
         jLabel6 = new javax.swing.JLabel();
         jTextField5 = new javax.swing.JTextField();
+        jButton6 = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox<>();
         jButton5 = new javax.swing.JButton();
@@ -215,6 +219,17 @@ public class Data extends javax.swing.JFrame {
         jTextField5.setFont(new java.awt.Font("Leelawadee UI", 1, 14)); // NOI18N
         getContentPane().add(jTextField5);
         jTextField5.setBounds(300, 280, 240, 30);
+
+        jButton6.setBackground(new java.awt.Color(114, 240, 106));
+        jButton6.setFont(new java.awt.Font("Leelawadee UI", 1, 18)); // NOI18N
+        jButton6.setText("Cetak");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton6);
+        jButton6.setBounds(370, 420, 90, 30);
 
         jLabel9.setFont(new java.awt.Font("Leelawadee UI", 1, 14)); // NOI18N
         jLabel9.setText("Status");
@@ -349,6 +364,18 @@ public class Data extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_jButton5ActionPerformed
 
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+        try{
+            InputStream is = Data.class.getResourceAsStream("/Laporan/Laporan.jasper");
+            JasperPrint jsPrint = JasperFillManager.fillReport(is, null, Konfig.configDB());
+            JasperViewer.viewReport(jsPrint, false);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "gagal mencetak laporan karena :"
+                    + e.getMessage(), "cetak laporan", JOptionPane.ERROR_MESSAGE);
+        }
+    }//GEN-LAST:event_jButton6ActionPerformed
+
 
     /**
      * @param args the command line arguments
@@ -392,6 +419,7 @@ public class Data extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
