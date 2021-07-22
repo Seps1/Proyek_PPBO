@@ -222,7 +222,7 @@ public class Data extends javax.swing.JFrame {
         jLabel9.setBounds(170, 320, 40, 20);
 
         jComboBox1.setFont(new java.awt.Font("Leelawadee UI", 1, 14)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Lulus", "Tidak Lulus" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "LULUS", "TIDAK LULUS" }));
         getContentPane().add(jComboBox1);
         jComboBox1.setBounds(300, 320, 150, 30);
 

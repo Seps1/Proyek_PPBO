@@ -140,7 +140,7 @@ public class Registrasi extends javax.swing.JFrame {
         jLabel7.setBounds(490, 350, 170, 20);
 
         jComboBox1.setFont(new java.awt.Font("Leelawadee UI", 1, 14)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "PSUD", "Ujian Mandiri 1", "Ujian Mandiri 2", "Ujian Mandiri 3", "Jalur Covid 1", "Jalur Covid 2", "Jalur Covid 3" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "PSUD", "Ujian Mandiri", "Jalur Covid" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox1ActionPerformed(evt);

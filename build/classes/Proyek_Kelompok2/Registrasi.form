@@ -196,14 +196,10 @@
           <Font name="Leelawadee UI" size="14" style="1"/>
         </Property>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="7">
+          <StringArray count="3">
             <StringItem index="0" value="PSUD"/>
-            <StringItem index="1" value="Ujian Mandiri 1"/>
-            <StringItem index="2" value="Ujian Mandiri 2"/>
-            <StringItem index="3" value="Ujian Mandiri 3"/>
-            <StringItem index="4" value="Jalur Covid 1"/>
-            <StringItem index="5" value="Jalur Covid 2"/>
-            <StringItem index="6" value="Jalur Covid 3"/>
+            <StringItem index="1" value="Ujian Mandiri"/>
+            <StringItem index="2" value="Jalur Covid"/>
           </StringArray>
         </Property>
       </Properties>
